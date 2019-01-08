@@ -1,0 +1,21 @@
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Award Winning Developer | UI Designer | Drew Parroccini</title>
+
+    {% set entries = craft.entries.section(['General']).limit(1) %}        
+    {% for entry in entries %}
+
+    <meta property="og:title" content="Award Winning Developer | UI Designer | Drew Parroccini" />
+	<meta property="og:type" content="profile" />
+	<meta property="og:url" content="https://www.parroccini.com" />
+	<meta property="og:image" content="http://parroccini.com/web/assets/build/img/uploads/logo.svg" />
+	<meta property="og:description" content="{{ entry.description }}" />
+	<meta property="og:determiner" content="Parroccini" />
+	<meta property="og:locale" content="en_GB" />
+	<meta property="og:site_name" content="DrewParroccini" />
+
+    <meta name="description" content="{{ entry.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% endfor %}

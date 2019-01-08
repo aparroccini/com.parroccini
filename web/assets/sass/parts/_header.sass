@@ -1,0 +1,56 @@
+.header
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+
+
+	.logo
+		font-family: $caption-font
+		color: #fff
+		font-size: 5em
+		font-weight: 900
+		display: flex
+		align-items: center
+
+		img
+			width: 100%
+			max-width: 360px
+
+			@media only screen and (max-width: $break-mid-large)
+				max-width: 200px
+
+		em
+			font-style: normal
+			color: $green
+
+			@media only screen and (max-width: $break-mid-large)
+				display: block
+
+.hero
+
+	ul
+		text-align: center
+		margin: 0 auto
+
+		@media only screen and (max-width: $break-mid-large)
+			padding-left: 0
+			padding-right: 0
+
+		li
+			display: inline-block
+			border-right: 1px solid #FFF
+			padding: 10px
+
+			@media only screen and (max-width: $break-mid-large)
+				padding: 5px
+
+			&:last-of-type
+				border-right: none
+
+			a
+				display: block
+				padding: 0 10px
+				line-height: 0
+
+

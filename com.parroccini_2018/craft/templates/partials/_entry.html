@@ -1,0 +1,55 @@
+{% extends "layout/_layout" %}
+
+{% block content %}
+    {% macro errorList(errors) %}
+        {% if errors %}
+            <ul class="errors">
+                {% for error in errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endmacro %}
+
+    {% set entries = craft.entries.section(['General']).limit(1) %}        
+    {% for entry in entries %}
+
+        <section class="hero">
+            {{ entry.headline }}
+
+        <ul class="padding-top-80 padding-bottom-80">
+            <li><a href="{{ entry.linkedin}}">LinkedIn</a></li>
+            <li><a href="{{ entry.dribbble}}">Dribbble</a></li>
+            <li><a href="{{ entry.medium}}">Medium</a></li>
+            <li><a href="{{ entry.strava}}">Strava</a></li>
+        </ul>
+    </section>
+
+<section class="work padding-top-80 padding-bottom-80">
+
+    {% set works = craft.entries.section(['Work']) %}        
+    {% for work in works %}
+    <div>
+        {% set workImage = work.workAsset.all() %}
+        {% if workImage|length %}
+            {% for rel in workImage %}
+                <img src="{{ rel.url }}" alt="{{ work.caption }}" />
+            {% endfor %}
+        {% endif %}
+        <span>{{ work.caption }}</span>
+
+    </div>
+    {% endfor %}
+</section>
+
+<section class="about padding-bottom-80">
+    {{ entry.subhead }}
+
+    {{ entry.body }}
+
+    <span style="margin-top: 30px; display: block;" class="hire-me"> <a href="mailto:aparroccini@gmail.com">Lets talk!</a></span>
+</section>
+
+    {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="53px" viewBox="0 0 29 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>down-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.3">
+        <g id="Desktop-HD" transform="translate(-128.000000, -1315.000000)" fill="#FFFFFF">
+            <g id="Group-2" transform="translate(122.000000, 1094.000000)">
+                <g id="word" transform="translate(6.000000, 0.000000)">
+                    <g id="down-arrow" transform="translate(14.500000, 247.500000) scale(-1, 1) rotate(-90.000000) translate(-14.500000, -247.500000) translate(-12.000000, 233.000000)">
+                        <path d="M52.4577159,0.560386473 C51.7272342,-0.186795491 50.5402015,-0.186795491 49.8097198,0.560386473 L26.5256161,24.4235105 L3.19585737,0.560386473 C2.46537568,-0.186795491 1.27834295,-0.186795491 0.547861263,0.560386473 C-0.182620421,1.30756844 -0.182620421,2.52173913 0.547861263,3.2689211 L25.155963,28.4396135 C25.5212038,28.8132045 25.9777549,29 26.479961,29 C26.9365121,29 27.4387182,28.8132045 27.8039591,28.4396135 L52.4120608,3.2689211 C53.1881976,2.52173913 53.1881976,1.30756844 52.4577159,0.560386473 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

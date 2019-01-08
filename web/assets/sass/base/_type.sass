@@ -1,0 +1,106 @@
+// MGT BASYS APPLICATION - BASE/TYPE.SASS
+// Author: GRAYBOX
+// Description: Font/typeface includes and mixins.
+
+$caption-font: 'PT Sans Caption', sans-serif
+$font: 'PT Sans', sans-serif
+
+
+body
+  font-size: 10px
+
+@mixin header-1
+  font-family: $font
+  color: #fff
+  font-weight: 900
+  font-size: 13em
+  line-height: 1
+  letter-spacing: 0.11px
+
+  @media only screen and (max-width: $break-mid-large)
+    font-size: 8em
+
+@mixin header-2
+  font-family: $font
+  color: #fff
+  font-weight: 900
+  font-size: 10em
+  line-height: 1
+  letter-spacing: 0.11px
+
+  @media only screen and (max-width: $break-mid-large)
+    font-size: 6em
+
+
+@mixin body
+  font-family: $font
+  font-weight: 300
+  font-size: 1.2em
+
+@mixin caption
+  font-family: $font
+  font-weight: 300
+  font-size: 1.2em
+
+@mixin link
+  color: #fff
+  text-decoration: none
+
+  &:hover
+    color: $red
+    -webkit-transition: color 300ms ease-in-out
+    -ms-transition: color 300ms ease-in-out
+    transition: color 300ms ease-in-out
+
+h1, h2, h3, h4, h5, h6, p, a, span, li, td
+  font-family: $font
+  margin-bottom: 0
+  color: $black
+
+p, a, span, li, td
+  @include body
+
+a
+  @include link
+
+.hire-me
+    color: #FFF
+
+    a
+      color: #fff
+      font-size: 1.8em
+      background-color: #525252
+      padding: 15px
+      border-radius: 10px
+      -webkit-transition: background-color 3ms ease-in-out
+      -ms-transition: background-color 3ms ease-in-out
+      transition: background-color 300ms ease-in-out
+
+
+      &:hover
+        background: $red
+        -webkit-transition: background-color 3ms ease-in-out
+        -ms-transition: background-color 3ms ease-in-out
+        transition: background-color 300ms ease-in-out
+
+      @media only screen and (max-width: $break-mid-large)
+        font-size: 1.2em
+
+h1
+  @include header-1
+
+  em
+    font-style: normal
+    color: $red
+
+  @media only screen and (max-width: $break-mid-large)
+    br
+      display: none
+
+h2
+ @include header-2
+
+
+
+
+

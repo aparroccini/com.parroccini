@@ -1,0 +1,89 @@
+.work
+	position: relative
+
+	.slick-arrow
+		position: absolute
+		cursor: pointer
+		z-index: 9999
+		background: none
+		border: none
+		display: block
+		width: 50px
+		height: 30px
+		top: 120px
+
+		@media only screen and (max-width: $break-mid-large)
+			display: none !important
+
+		&:before
+			display: block
+			content: ""
+			background-size: auto
+			background-repeat: no-repeat
+			width: 53px
+			height: 53px
+			outline: none
+
+		&.slick-prev
+			left: 0
+
+			&:before
+				background-image: url('/assets/build/img/ui/prev.svg')
+
+		&.slick-next
+			right: 0
+
+			&:before
+				background-image: url('/assets/build/img/ui/next.svg')
+
+
+	.slick-dots
+		text-align: center
+		padding-left: 0
+
+		li
+			display: inline-block
+			background: transparent
+			padding: 10px 
+
+			@media only screen and (max-width: $break-mid-large)
+				padding: 5px
+
+			&.slick-active
+				button
+					background-color: $red
+
+			button
+				display: block
+				text-indent: -9999px
+				background-color: #D8D8D8
+				width: 15px
+				height: 15px
+				border-radius: 15px
+				border: none
+				padding: 0
+
+				@media only screen and (max-width: $break-mid-large)
+					width: 10px
+					height: 10px
+					border-radius: 10px
+					overflow: hidden
+
+	div
+		img
+			max-width: none
+			width: 80%
+			max-width: 800px
+			display: block
+			margin: 0 auto
+
+			@media only screen and (max-width: $break-mid-large)
+				width: 96%
+				
+		span
+			padding: 30px 0
+			color: #FFF
+			text-align: center
+			font-family: $caption-font
+			display: block
+			text-align: center

@@ -1,0 +1,31 @@
+{
+  "name": "parroccini-gulpfile",
+  "version": "1.0.0",
+  "description": "Craft CMS gulpfile.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Drew Parroccini <aparroccini@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/dparroccini/parroccini.com"
+  },
+  "homepage": "www.parroccini.com",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-imagemin": "~4.0.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.1.2",
+    "parallax-js": "^3.1.0"
+  }
+}
